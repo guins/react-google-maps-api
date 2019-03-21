@@ -71,6 +71,14 @@ export class OverlayView extends React.PureComponent<
     )
   }
 
+  componentDidUpdate (prevProps, prevState)
+  {
+    if( this.state.overlayView )
+    {
+      this.onPositionElement()
+    }
+  }
+
   componentWillUnmount = () => {
     this.state.overlayView !== null && this.state.overlayView.setMap(null)
   }
