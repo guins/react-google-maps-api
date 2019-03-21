@@ -95,25 +95,25 @@ interface MarkerClustererProps {
   children: (markerClusterer: MarkerClusterer) => React.ReactNode
   initialOptions?: MarkerClustererOptions
   averageCenter?: boolean
-  batchSizeIE: number
-  calculator: Calculator
-  clusterClass: string
-  enableRetinaIcons: boolean
-  gridSize: number
-  ignoreHidden: boolean
-  imageExtension: string
-  imagePath: string
-  imageSizes: number[]
-  maxZoom: number
-  minimumClusterSize: number
-  styles: ClusterIconStyle[]
-  title: string
-  zoomOnClick: boolean
-  onClick: (cluster: Cluster) => void
-  onClusteringBegin: (markerClusterer: MarkerClusterer) => void
-  onClusteringEnd: (markerClusterer: MarkerClusterer) => void
-  onMouseOver: (cluster: Cluster) => void
-  onMouseOut: (cluster: Cluster) => void
+  batchSizeIE?: number
+  calculator?: Calculator
+  clusterClass?: string
+  enableRetinaIcons?: boolean
+  gridSize?: number
+  ignoreHidden?: boolean
+  imageExtension?: string
+  imagePath?: string
+  imageSizes?: number[]
+  maxZoom?: number
+  minimumClusterSize?: number
+  styles?: ClusterIconStyle[]
+  title?: string
+  zoomOnClick?: boolean
+  onClick?: (cluster: Cluster) => void
+  onClusteringBegin?: (markerClusterer: MarkerClusterer) => void
+  onClusteringEnd?: (markerClusterer: MarkerClusterer) => void
+  onMouseOver?: (cluster: Cluster) => void
+  onMouseOut?: (cluster: Cluster) => void
 }
 
 export class MarkerClustererComponent extends PureComponent<
